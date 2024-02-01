@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OEFENDERBY LRV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="scripts/nvdstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script defer src="script/kaartjes.js"></script>
+    <link rel="icon" href="media/icon.ico" type="image/x-icon">
+    <script defer src="script/derbyscript.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="media/LOGO LRV.png" width="40" height="45" class="d-inline-block align-top rounded" alt="LRV" loading="lazy" href="/index.html">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Onze oefenderby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="unavailable.html">meer informatie</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  het archief
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="/unavailable.html">2022</a></li>
+                  <li><a class="dropdown-item" href="/unavailable.html">2023</a></li>
+                  <li><a class="dropdown-item" href="/unavailable.html">2024</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/unavailable.html" tabindex="-1" aria-disabled="true">inschrijven</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/tijdensderby.html" tabindex="-1" aria-disabled="true">tijdens OefenDerby 2024</a>
+              </li>
+            </ul>
+            
+     </nav>
+     <header class="container mt-4 text-center">
+        <h1>Oefenderby LRV de Linderuiters</h1>
+    </header>
+
+    <section id="home" class="container mt-4 text-center">
+        <h2>snelle navigatieknoppen</h2>
+        <div class="btn-group mt-3">
+            <a class="btn btn-primary" href="#asapinfo-ruiter">Ruiter</a>
+            <a class="btn btn-primary" href="#asapinfo-paard">Paard</a>
+            <a class="btn btn-primary" href="#asapinfo-groom">Groom</a>
+            <a class="btn btn-primary" href="#asapinfo-bezoeker">Bezoeker</a>
+        </div>
+    </section>
+    
+
+
+    <section id="tickets" class="container mt-4 text-center">
+        <h2>details van het terrein</h2>
+        <div id="detailkaart" style="height: 550px;"></div>
+        <p>tips voor je navigatie:</p>
+        <p>stel hem goed in</p>
+    </section>
+
+<section id="parcoursuitleg" class="container mt-4 text-center">
+    <h1>het parcours</h1>
+    <p>zorg maar dat je niet in de verkeerde richting rijd</p>
+    <img class="img-fluid col-md-6" height="100" src="mediaforuser/parcours2024.jpg" alt="het derbyparcours van dit jaar">
+    <p>of bekijk het parcours <a href="mediaforuser/parcours2024.jpg">op volledig scherm.</a></p>
+</section>
+
+
+    <section id="asapinfo-ruiter" class="container mt-4 text-center">
+        <h2>informatie voor ruiter</h2>
+        <p>Bel nu naar onze dierenarts van wacht, Dierenartsenpraktijk Katona +++TELEFOONKNOP+++</p>
+
+    </section>
+    
+    <section id="asapinfo-paard" class="container mt-4 text-center">
+        <h2>informatie voor je paard</h2>
+        <p>Bel nu naar onze dierenarts van wacht, Dierenartsenpraktijk Katona +++TELEFOONKNOP+++</p>
+
+    </section>   
+
+    <section id="asapinfo-groom" class="container mt-4 text-center">
+        <h2>informatie voor begeleiders van deelnemers</h2>
+        <p>het terrein betreden mag niet, ons team staat paraad om een bang paard te begeleiden waar nodig</p>
+        <p>onze jurytoren staat in contact met de teams op het terrein</p>
+
+    </section>
+
+    <section id="asapinfo-bezoeker" class="container mt-4 text-center">
+        <h2>informatie voor de bezoeker</h2>
+        <p>probeer onze catering! </p>
+
+    </section>
+
+    <footer class="container mt-4 text-center">
+        <p>&copy; 2024 LRV De Linderuiters. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</body>
+
+</html>
