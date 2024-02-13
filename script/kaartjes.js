@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Marker for the parking (Approximate location, adjust as needed)
     var marker2 = L.marker([51.21972, 4.76967]).addTo(map)
-        .bindPopup('<div style="text-align: center;">Is dit onze parking?</div>');
+        .bindPopup('<div style="text-align: center;">algemene parking <br> bezoekers & vrachtwagens</div>');
 
     // vierkant voor parking aan te duiden
     var polygonCoords = [
-        [51.21982, 4.76887],
+        [51.21959, 4.76758],
         [51.22003, 4.77018],
-        [51.21950, 4.77016],
-        [51.21912, 4.76921]
+        [51.21964, 4.77033],
+        [51.21859, 4.76794]
     ];
 
     // kleurtje aan vierkant voor parking
