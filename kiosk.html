@@ -7,24 +7,27 @@
     <title>Kioskpagina Derby</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-body {
-    background-color: #f8f9fa;
-    margin: 0;
-    overflow-x: hidden;
-}
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            overflow-x: hidden;
+        }
 
-.container {
-    text-align: center;
-    margin-top: 10vh;
-    overflow-x: auto;
-}
+        .container {
+            text-align: center;
+            margin-top: 10vh;
+            overflow-x: auto;
+        }
 
-.container h1 {
-    font-size: 10em; /* Verander dit naar een geschikte waarde voor de gewenste grootte */
-    margin-bottom: 20px;
-}
+        .container h1 {
+            font-size: 10em; /* Verander dit naar een geschikte waarde voor de gewenste grootte */
+            margin-bottom: 20px;
+        }
 
-
+        .loading-text {
+            display: none;
+            color: gray;
+        }
     </style>
 </head>
 
@@ -33,10 +36,25 @@ body {
     <div class="container">
         <h1>Heb je even?</h1>
         <p class="lead">We zijn heel benieuwd naar je mening of ervaring.</p>
-        <p class="text-muted">Het invullen van de vragenlijst kan volledig anoniem.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjXyJLv2SxFMnCR0fKx6gjrPIQ2V4BAu-FFpq40Nm7jN4Pkw/viewform?usp=sf_link" class="btn btn-primary">Vul onze vragenlijst in</a>
+        <a href="#" onclick="changeUrl()" class="btn btn-primary">Vul onze vragenlijst in</a>
     </div>
+    
+    <div id="loadingText" class=" align-items-center justify-content-center loading-text">Even geduld aub...</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        function changeUrl() {
+            // Toon het 'even geduld'-tekstje
+            document.getElementById('loadingText').style.display = 'inline-block';
+
+            // Wacht een paar seconden (hier 2 seconden als voorbeeld)
+            setTimeout(function () {
+                // Verander de URL
+                window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdjXyJLv2SxFMnCR0fKx6gjrPIQ2V4BAu-FFpq40Nm7jN4Pkw/viewform?usp=sf_link';
+            }, 2000); // 2000 milliseconden = 2 seconden
+        }
+    </script>
 </body>
 
 </html>
